@@ -106,3 +106,56 @@ a
 
             &:hover
                 color: white
+
+.fade-enter-active, 
+.fade-leave-active
+    transition: opacity 1s
+
+.fade-enter, 
+.fade-leave-to
+    opacity: 0
+
+.zoom-enter-active, 
+.zoom-leave-active
+    transition: all 1s
+
+.zoom-enter, 
+.zoom-leave-to
+    opacity: 0
+    transform: scale(0)
+
+.slide-enter-active, 
+.slide-leave-active
+    transition: all 1s
+
+.slide-enter, 
+.slide-leave-to
+    opacity: 0
+    transform: translateX(-100%)
+
+.slideInFromLeft-enter-active, 
+.slideInFromLeft-leave-active
+    transition: all 1s
+
+.slideInFromLeft-enter, 
+.slideInFromLeft-leave-to
+    opacity: 0
+    transform: translateX(-100%)
+
+.slideOutToRight-enter-active, 
+.slideOutToRight-leave-active
+    transition: all 1s
+
+.slideOutToRight-enter, 
+.slideOutToRight-leave-to
+    opacity: 0
+    transform: translateX(100%)
+    
+.slideInFromBottom-enter-active, 
+.slideInFromBottom-leave-active
+    transition: all 1s
+
+.slideInFromBottom-enter, 
+.slideInFromBottom-leave-to
+    opacity: 0
+    transform: translateY(60px)

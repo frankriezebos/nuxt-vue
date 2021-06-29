@@ -1,19 +1,21 @@
-<template>
-  <div>
-    <TheNavbar/>
-    <Nuxt />
-  </div>
+<template> 
+    <div>
+        <TheNavbar/>
+        <transition name="slideInFromBottom">
+            <Nuxt />
+        </transition>
+    </div>
 </template>
 
 <script>
 import TheNavbar from '@/components/TheNavbar'
 export default {
-  components: {
-    TheNavbar
-  }
+    transition: {
+        name: 'slideInFromBottom',
+        mode: 'out-in'
+    },
+    components: {
+        TheNavbar
+    }
 }
 </script>
-
-<style>
-
-</style>
