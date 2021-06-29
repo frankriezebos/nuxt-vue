@@ -1,0 +1,108 @@
+html 
+    font-family: sans-serif
+    font-size: 16px
+    word-spacing: 1px
+    -ms-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    box-sizing: border-box
+
+body
+    background-color: #181022
+    color: rgba(255, 255, 255, 0.7)
+
+h1, h2, h3, h4, h5, h6
+    margin-bottom: 20px
+    font-weight: normal
+    color: white
+
+    &.title
+        font-size: 45px
+
+p, li
+    line-height: 1.5
+
+a
+    transition: all 150ms ease-in-out
+
+*,
+*::before,
+*::after 
+    box-sizing: border-box
+    margin: 0
+
+.button--green 
+    display: inline-block
+    border-radius: 4px
+    border: 1px solid #3b8070
+    color: #3b8070
+    text-decoration: none
+    padding: 10px 30px
+
+    &:hover
+        color: #fff
+        background-color: #3b8070
+
+.button--grey 
+    display: inline-block
+    border-radius: 4px
+    border: 1px solid #35495e
+    color: #35495e
+    text-decoration: none
+    padding: 10px 30px
+    margin-left: 15px
+
+    &:hover 
+        color: #fff
+        background-color: #35495e
+
+.navbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px
+
+    a
+        text-decoration: none
+        color: inherit
+        margin-right: 15px
+
+        &:last-of-type
+            margin-right: 0
+
+        &.nuxt-link-active,
+        &:hover
+            color: white
+
+    &--logowrap
+        display: flex
+        align-items: center
+
+        &-logo
+            img
+                width: 140px
+                height: auto
+
+        &-subheader
+            margin-left: 15px
+            font-size: 12px
+
+    &-nav
+        display: flex
+        align-self: flex-end
+
+.post--article
+    &-wrap
+        width: 70%
+        margin-right: 10% 
+
+    &-sidebar
+        width: 20%
+
+        a
+            text-decoration: none
+            color: inherit
+
+            &:hover
+                color: white
